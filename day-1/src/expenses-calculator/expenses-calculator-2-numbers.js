@@ -8,7 +8,7 @@ export const getNumbersAddingTo2020 = (numbers) =>
             : acc;
     }, null);
 
-export const getCalculationFromNumbers = (input) =>  {
+export const getCalculationFrom2Numbers = (input) =>  {
     const numbers = input.split('\n');
     const [numA, numB] = getNumbersAddingTo2020(numbers);
 

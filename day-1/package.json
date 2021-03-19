@@ -6,7 +6,8 @@
   "scripts": {
     "test": "jest",
     "lint": "eslint --fix .",
-    "build": "babel src -d build"
+    "compile": "babel src -d build",
+    "build": "npm run lint && npm run test && npm run compile"
   },
   "author": "",
   "license": "ISC",
