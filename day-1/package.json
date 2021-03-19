@@ -4,7 +4,8 @@
   "description": "Advent of code 2020",
   "main": "index.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "lint": "eslint --fix ."
   },
   "author": "",
   "license": "ISC",
@@ -15,7 +16,9 @@
   "devDependencies": {
     "@babel/cli": "^7.13.10",
     "@babel/core": "^7.13.10",
-    "@babel/preset-env": "^7.13.10"
+    "@babel/preset-env": "^7.13.10",
+    "eslint": "^7.22.0",
+    "eslint-plugin-jest": "^24.3.2"
   },
   "babel": {
     "env": {
