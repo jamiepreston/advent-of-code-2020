@@ -1,4 +1,4 @@
-export default (password) => {
+export const passwordIsValid = (password) => {
     const [occurrences, rawLetter, pwString] = password.split(' ');
     const letter = rawLetter.replace(':', '');
     const [min, max] = occurrences.split('-')
@@ -9,4 +9,10 @@ export default (password) => {
 
     return occurrenceCount >= min
         && occurrenceCount <= max;
+}
+
+export const checkAllPasswords = passwords => {
+    const passwordsArr = passwords.split('\n');
+    const validPasswords = passwordsArr.filter(passwordIsValid);
+    return validPasswords.length;
 }
