@@ -5,11 +5,13 @@
   "main": "index.js",
   "scripts": {
     "test": "jest",
-    "lint": "eslint --fix ."
+    "lint": "eslint --fix .",
+    "compile": "babel src -d build"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@babel/cli": "^7.13.10",
     "@babel/core": "^7.13.10",
     "@babel/preset-env": "^7.13.10",
     "eslint": "^7.22.0"
@@ -19,12 +21,8 @@
     "eslint-plugin-jest": "^24.3.2"
   },
   "babel": {
-    "env": {
-      "test": {
-        "presets": [
-          "@babel/preset-env"
-        ]
-      }
-    }
+    "presets": [
+      "@babel/preset-env"
+    ]
   }
 }
