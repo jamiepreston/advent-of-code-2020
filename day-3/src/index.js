@@ -1,6 +1,7 @@
-// import data from "./data";
-import trajectory from './trajectory-v1';
-// import {checkAllPasswords as checkAllPasswordsV2} from './password-checker-v2';
+import data from "./data";
+import { calculateTrajectory } from './trajectory-v1';
 
-const response = trajectory();
-console.log(`${response}`);
+const response = calculateTrajectory({
+  map: data,
+});
+console.log(`${response} Trees bumped into`);
