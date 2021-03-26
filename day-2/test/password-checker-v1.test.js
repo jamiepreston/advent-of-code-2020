@@ -1,7 +1,7 @@
 import {
     passwordIsValid,
     checkAllPasswords,
-} from '../src/password-checker';
+} from '../src/password-checker-v1';
 
 describe('password-checker', () => {
     describe('passwordIsValid', () => {
