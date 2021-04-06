@@ -101,6 +101,11 @@ describe('passport-checker', () => {
       const result = checkHgt(hgt);
       expect(result).toBe(false);
     });
+    it('should return false for an invalid hgt', () => {
+      const hgt = '165in';
+      const result = checkHgt(hgt);
+      expect(result).toBe(false);
+    });
   });
 
   describe('#checkHcl', () => {

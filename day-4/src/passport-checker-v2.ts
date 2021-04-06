@@ -18,7 +18,7 @@ export const checkEyr = (val:string): boolean =>
   val.match(/^20(([12][0-9])|(30))$/) !== null;
 
 export const checkHgt = (val:string): boolean =>
-  val.match(/^(1(?:(?:[5-8][0-9])|(?:9[0-3]))cm$)|((?:(?:59)|(?:6[0-9])|(?:7[0-6]))in$)/) !== null;
+  val.match(/(^1(?:(?:[5-8][0-9])|(?:9[0-3]))cm$)|(^(?:(?:59)|(?:6[0-9])|(?:7[0-6]))in)$/) !== null;
 
 export const checkHcl = (val:string): boolean =>
   val.match(/^\#([0-9]|[a-z]){6}$/) !== null;
