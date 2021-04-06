@@ -1,7 +1,7 @@
 import {
   checkPassport,
   checkAllPassports,
-} from '../src/passport-checker';
+} from '../src/passport-checker-v1';
 
 describe('passport-checker', () => {
   describe('#checkPassport', () => {
